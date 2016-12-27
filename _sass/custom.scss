@@ -1,190 +1,197 @@
-@font-face {
-    font-family: 'exo_2regular';
-    src: url('/Fonts/exo2-regular-webfont.woff2') format('woff2'),
-         url('/Fonts/exo2-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: -2336px 0; }
 }
 
-@font-face {
-    font-family: 'exo_2extra_light';
-    src: url('/Fonts/exo2-extralight-webfont.woff2') format('woff2'),
-         url('/Fonts/exo2-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+#animate-area {
+    width: 100%;
+    height: auto;
+    background-image: url(/img/codesmiths-background.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+
+    animation: animatedBackground 60s linear infinite;
+    -ms-animation: animatedBackground 60s linear infinite;
+    -moz-animation: animatedBackground 60s linear infinite;
+    -webkit-animation: animatedBackground 60s linear infinite;
 }
 
-h1, h2, h3, h4, h5, p {
-  font-family: 'exo_2regular';
+.header {
+  background-color: rgba(255, 255, 255, .5);
 }
 
-.site-title li a img {
-  height: 55px;
-  width: auto;
+.header.active {
+  background: red;
 }
 
-.nav li h5 {
-  padding-top: 7px;
-  padding-right: 345px;
-  color: #fff;
-  font-family: 'exo_2extra_light';
-  text-transform: uppercase;
-  letter-spacing: 6px;
+.header h3 {
+  margin-top: 10px;
+  padding-left: 5px;
 }
 
-@media (max-width: 1199px) {
-  .nav li h5 {
-    padding-right: 100px;
-  }
+.header button {
+  background: #9c18ff;
 }
 
-@media (max-width: 991px) {
-  .nav li h5 {
-    padding-right: 0px;
-  }
+.header button:hover {
+  background: #3ed60a;
 }
 
-.links li {
-  padding-top: 20px;
+.header a {
+  color: #f0b60d;
+  font-family: "chunk";
+  letter-spacing: 1px;
 }
 
-.bg-home {
-  background: #000;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  z-index: -1;
-  -webkit-filter: blur(0px);
-}
-
-.section {
-  background: #fff;
-  padding: 30px 0;
-}
-
-.section-break {
-  padding: 40px 0;
-}
-
-.header-break {
-  padding-top: 80px;
-}
-
-.site-footer {
-  color: #fff;
-  text-shadow: #444 0 1px 1px;
-  padding-top: 40px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.fa {
-  color: #fff;
-}
-
-.footer-channels{
-  padding: 15px 0;
-}
-
-.footer-channels li {
-  display: inline;
-  padding: 0px 5px;
-}
-
-.custom-modal {
-  background: rgb(0,0,0); /* for IE */
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.custom-modal h4 {
-  color: white;
-  font-family: 'exo_2regular';
-}
-
-.navbar {
-  background: rgba(0, 0, 0, 0.5);
-  border-color: transparent;
-}
-
-.navbar li a {
-  color: #fff;
-  font-family: 'exo_2regular';
-}
-
-.navbar li a:hover {
-  color: #000;
-  background-color: #fff;
-}
-
-.navbar button {
-  background: #000;
-  border-color: #fff;
-  border-radius: 2px;
-}
-
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-iframe {
-  height: 700px;
-  width: 100%;
-}
-
-.section-title {
-  padding-left: 50px;
-  font-family: 'exo_2regular';
-  text-transform: uppercase;
-}
-
-.posts h2 {
-  font-family: 'exo_2regular';
-  text-transform: uppercase;
-}
-
-.contact-info h2 {
-  text-transform: uppercase;
-  color: #fff;
-  font-family: 'exo_2regular';
-}
-
-.contact-info h5 {
-  color: #fff;
-  font-family: 'exo_2regular';
-}
-
-.contact-info a {
-  color: #fff;
-  font-family: 'exo_2regular';
-}
-
-.contact-info a:hover {
-  color: #13FFAA;
+.header a:hover {
+  color: #3ed60a;
   text-decoration: none;
 }
 
-.footer-channels li a i:hover {
-  color: #13FFAA;
+.collapse ul li {
+  padding: 0 10px;
+  margin-top: 7px;
+}
+
+.modal-header, .modal-body, .modal-footer {
+  background: #800ad6;
+  font-family: "chunk";
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.contact-info li {
+  list-style: none;
+  margin-left: -20px;
+}
+
+.contact-info li a {
+  font-family: "chunk";
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 2em;
+}
+
+.contact-info li a:hover {
+  color: #3ED60A;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 60%;
+  padding: 130px 0;
+}
+
+@media (max-width: 675px) {
+  .logo img {
+    width: 80%;
+    padding: 80px 0;
+  }
+}
+
+.section-break {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.section1 {
+  background-color: #1c75bc;
+  padding: 20px 10px;
+}
+
+.section1 h1 {
+  font-family: 'chunk';
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.section1 h2  {
+  font-family: 'nexa';
+  color: #d6a000;
+}
+
+.section1 p {
+  color: #fff;
+}
+
+.about-button {
+  background: #3ED60A;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border-color: transparent;
+  box-shadow: #444 1px 1px 1px;
+}
+
+.about-button:hover {
+  background: #800AD6;
+}
+
+.about-button a {
+  font-family: 'chunk';
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.about-button a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section2 {
+  background-color: #c93314;
+  padding: 20px 10px;
+}
+
+.section2 h1 {
+  font-family: 'chunk';
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.section2 h2  {
+  font-family: 'nexa';
+  color: #d6a000;
+}
+
+.section2 p {
+  color: #fff;
+}
+
+.footer {
+  background: rgba(62, 214, 10, .8);
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+
+.footer ul {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 20px 40px;
+}
+
+.footer a {
+  font-family: 'chunk';
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.7em;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #800ad6;
+}
+
+.footer-list {
+  margin-left: -25px;
 }

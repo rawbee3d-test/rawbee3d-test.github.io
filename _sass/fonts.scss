@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'chunk';
+    src: url('/fonts/chunkfive-webfont.woff2') format('woff2'),
+         url('/fonts/chunkfive-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa';
+    src: url('/fonts/NexaRustSans-Black-Free-webfont.eot');
+    src: url('/fonts/NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/NexaRustSans-Black-Free-webfont.woff2') format('woff2'),
+         url('/fonts/NexaRustSans-Black-Free-webfont.woff') format('woff'),
+         url('/fonts/NexaRustSans-Black-Free-webfont.ttf') format('truetype'),
+         url('/fonts/NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
